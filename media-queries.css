@@ -1,0 +1,71 @@
+/* Media Queries */
+
+
+/* MQ-MOBILE (max-width: 768px) */
+@media only screen 
+  and (max-width: 768px) 
+  and (min-width: 480px) 
+  and (orientation: portrait) {
+    /* Linked to: .social-media-grid */
+    .social-media-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    /* Linked to: .social-media-card */
+    .social-media-card {
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+}
+
+/* MQ-MOBILE-LANDSCAPE (max-width: 768px) */
+@media only screen 
+  and (max-width: 768px) 
+  and (min-width: 480px) 
+  and (orientation: landscape) {
+    /* Linked to: .social-media-grid */
+    .social-media-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    /* Linked to: .social-media-card */
+    .social-media-card {
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+}
+
+/* MQ-TABLET-PORT (max-width: 600px) */
+@media only screen 
+  and (max-width: 600px) 
+  and (min-width: 480px) 
+  and (orientation: portrait) {
+    /* Linked to: .social-media-card */
+    .social-media-card {
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+}
+
+/* MQ-TABLET-LANDSCAPE (max-width: 1024px) */
+@media only screen 
+  and (max-width: 1024px) 
+  and (min-width: 768px) 
+  and (orientation: landscape) {
+    /* Linked to: .social-media-grid */
+    .social-media-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* MQ-DESKTOP-LARGE (min-width: 1200px) */
+@media only screen 
+  and (min-width: 1200px) 
+  and (min-height: 800px) {
+    /* Linked to: .social-media-grid */
+    .social-media-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
